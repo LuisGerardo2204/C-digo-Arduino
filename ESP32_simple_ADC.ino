@@ -14,10 +14,10 @@ void loop() {
   // Lectura del canal analógico 0
   int lectura = analogRead(A0);
   // Se convierte la lectura digital a su equivalente analógico 
-  //float voltage = sensorValue * (3.0 / 1024.0); //Descomentar esta línea para
+  //float voltaje = lectura * (3.0 / 1024.0); //Descomentar esta línea para
   //tarjetas arduino de 8 bits: arduino UNO, Mega, Nano, leonardo, micro
-  float voltage = sensorValue * (3.0 / 4096.0); // Usar esta línea en tarjetas de 32 bits 
+  float voltaje = lectura * (3.0 / 4096.0); // Usar esta línea en tarjetas de 32 bits 
   // y 12 bits de resolución ESP32, Arduino Due, arduino basado en SAMD21
   // Se imprime el voltaje analógico obtenido en el puerto serie
-  Serial.println(voltage);
+  Serial.println(voltaje);
 }
