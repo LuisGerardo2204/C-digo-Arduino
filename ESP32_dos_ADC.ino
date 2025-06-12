@@ -19,7 +19,7 @@ void loop() {
   //Descomentar estas líneas para
   //tarjetas arduino de 8 bits: arduino UNO, Mega, Nano, leonardo, micro
   float voltaje1 = lectura1 * (3.0 / 4096.0);
-  float voltaje2 = lectura1 * (3.0 / 4096.0);
+  float voltaje2 = lectura2 * (3.0 / 4096.0);
   
   Serial.print(voltaje1);
   Serial.print(",");
