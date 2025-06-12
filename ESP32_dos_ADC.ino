@@ -21,7 +21,7 @@ void loop() {
   float voltaje1 = lectura1 * (3.0 / 4096.0);
   float voltaje2 = lectura1 * (3.0 / 4096.0);
   
-  Serial.println(voltaje1);
+  Serial.print(voltaje1);
   Serial.print(",");
   Serial.println(voltaje2);
 }
