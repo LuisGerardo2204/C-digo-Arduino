@@ -16,8 +16,8 @@
 #include "WiFi.h"
 #include "AsyncUDP.h"
 
-const char* ssid = "  "; // Usar SSID de la red local
-const char* password = "  "; // Usar el password de la red
+const char* ssid = " "; // Usar SSID de la red local
+const char* password = " "; // Usar el password de la red
 
 #define RELAY0_PIN 19
 #define RELAY1_PIN 18
