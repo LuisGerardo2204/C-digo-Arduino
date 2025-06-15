@@ -20,4 +20,5 @@ void loop() {
   // y 12 bits de resolución ESP32, Arduino Due, arduino basado en SAMD21
   // Se imprime el voltaje analógico obtenido en el puerto serie
   Serial.println(voltaje);
+  delay(10);
 }
