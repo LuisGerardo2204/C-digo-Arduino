@@ -24,4 +24,5 @@ void loop() {
   Serial.print(voltaje1);
   Serial.print(",");
   Serial.println(voltaje2);
+  delay(10);
 }
