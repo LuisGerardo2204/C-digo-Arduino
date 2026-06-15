@@ -71,14 +71,17 @@ if (udp.listen(2020)) {
       Serial.print(packet.localIP());
       Serial.print(":");
       Serial.print(packet.localPort());
-      Serial.print(", Length: ");
+      Serial.print(", Longitud: ");
       Serial.print(packet.length());
       Serial.print(", Datos: ");
       Serial.write(packet.data(), packet.length());
       Serial.println();
       //Respuesta al cliente o conexión
       packet.printf("llegaron %u bytes de datos", packet.length());
-      String myString = (const char*)packet.data();
+      String dato = (const char*)packet.data();
+      String myString;
+      myString [0]= dato [0];
+      myString [1]= dato [1];
       if (myString == "E1") {
         digitalWrite(RELAY0_PIN,HIGH);
       } else if (myString == "A1") {
