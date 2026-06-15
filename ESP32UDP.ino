@@ -1,4 +1,4 @@
-//Progrma para el encendido y apagado de 4 leds o relevadores con ESP32 y protocolo UDP
+//Programa para el encendido y apagado de 4 leds o relevadores con ESP32 y protocolo UDP
 // Basado en el código:
 // hello.ESP32-WROOM.UDP.ino
 //
