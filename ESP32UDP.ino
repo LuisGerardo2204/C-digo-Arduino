@@ -79,7 +79,7 @@ if (udp.listen(2020)) {
       //Respuesta al cliente o conexión
       packet.printf("llegaron %u bytes de datos", packet.length());
       String dato = (const char*)packet.data();
-      String myString;
+      String myString="  ";
       myString [0]= dato [0];
       myString [1]= dato [1];
       if (myString == "E1") {
